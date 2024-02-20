@@ -8,6 +8,6 @@
 ** USER ACTIONS (in silo!) **
 - [X] Read all
 - [X] Read one
-- [ ] Create new
+- [X] Create new
 - [ ] Update one
 - [ ] Delete one
