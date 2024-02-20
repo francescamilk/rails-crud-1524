@@ -19,4 +19,7 @@ Rails.application.routes.draw do
 
   # PATCH http://localhost:3000/restaurants/1
   patch "/restaurants/:id",    to: "restaurants#update"
+
+  # DELETE http://localhost:3000/restaurants/1
+  delete "/restaurants/:id",   to: "restaurants#destroy"
 end

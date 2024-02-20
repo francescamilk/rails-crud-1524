@@ -10,4 +10,4 @@
 - [X] Read one
 - [X] Create new
 - [X] Update one
-- [ ] Delete one
+- [X] Delete one
