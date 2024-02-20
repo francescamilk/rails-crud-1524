@@ -6,7 +6,7 @@ class RestaurantsController < ApplicationController
 
     def show
         # find a restaurant by id
-        id = params[:id].to_i
+        id = params[:id]
         @restaurant = Restaurant.find(id)
     end
 
@@ -19,6 +19,20 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.create(restaurant_params)
 
         redirect_to restaurant_path(@restaurant), notice: "Thanks for creating!"
+    end
+
+    def edit
+        # find the given restaurant by id
+        @restaurant = Restaurant.find(params[:id])
+    end
+
+    def update
+        # find the given restaurant by id
+        # update the attributes
+        @restaurant = Restaurant.find(params[:id])
+        @restaurant.update(restaurant_params)
+
+        redirect_to restaurant_path(@restaurant.id)
     end
 
     private

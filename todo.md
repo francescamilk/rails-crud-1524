@@ -9,5 +9,5 @@
 - [X] Read all
 - [X] Read one
 - [X] Create new
-- [ ] Update one
+- [X] Update one
 - [ ] Delete one
